@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color:gold;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  /* display: grid;
+  place-items: center; */
+}
+.calculator{
+    height: 550px;
+    width: 370px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, .3),
+                 5px 5px 15px rgba(0, 0, 0, .3);
+    background-color:blue;
+}
+.calculator .line{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.calculator form>input{
+   padding: 10px 20px;
+   height: 90px;
+   width: 90%;
+   pointer-events: none;
+   border: none;
+   text-align: right;
+   font-size: 30px;
+   flex: 1;
+   background-color: black;
+   color: white;
+   outline: none;
+   margin: 20px 19px;
+}
+.calculator .line .operator{
+    padding: 10px 20px;
+    height: 70px;
+    font-size: 25px;
+    width: 75px;
+    display: grid;
+    font-weight: bolder;
+    place-items: center;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, .3),
+                 5px 5px 15px rgba(0, 0, 0, .3);
+    background: transparent;
+}
+.calculator .line .operator1{
+    padding: 10px 20px;
+    height: 70px;
+    font-size: 20px;
+    width: 75px;
+    display: grid;
+    font-weight: bolder;
+    place-items: center;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, .3),
+                 5px 5px 15px rgba(0, 0, 0, .3);
+    background: transparent;
+}
+.calculator .line input[type=button]:hover{
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, .3),
+                 8px 8px 10px rgba(255, 255, 255, .3);
+}
+.calculator .line .del{
+    font-size: 20px;
+}
